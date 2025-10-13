@@ -22,7 +22,7 @@ else if (argumentos[0] == "POST" && argumentos[1] == "products" && argumentos.le
         category: argumentos[4]}
     agregarProducto(producto)
 }
-else if (argumentos[0] == "DELETE" && argumentos[1].includes("product/") ){
+else if (argumentos[0] == "DELETE" && argumentos[1].includes("products/") ){
     const id = argumentos[1].substr(8,2)
     console.log("eliminar dentro del if id : ", id)
     eliminarProducto(id)

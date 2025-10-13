@@ -45,8 +45,8 @@ export async function eliminarProducto(id) {
       method: "DELETE",
     })
     .then(response => response.json())
-    .then(data => console.log("poducto eliminado :", data));
-   // console.log("dentro de eliminar", data);
+    .then(data => console.log("poducto eliminado => ", data))
+
   } catch (error) {
     console.log(error);
   }
@@ -70,27 +70,3 @@ async function actualizarProducto(producto) {
     console.log(error);
   }
 }
-
-//obtenerProductos()
-//obtenerProducto(1)
-
-/*agregarProducto({
-  //"id": 21,
-  title: "Prueba",
-  price: 100,
-  description: "producto de prueba",
-  //"category": "prueba",
-  //"image": "http://example.com"
-});
-
-//eliminarProducto(1)
-//obtenerProducto(1)
-/*
-actualizarProducto({
-"id": 1,
-"title": "Prueba",
-"price": 100,
-"description": "producto de prueba",
-"category": "prueba",
-"image": "http://example.com"
-})*/
